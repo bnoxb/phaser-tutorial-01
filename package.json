@@ -2,14 +2,22 @@
   "name": "tutorial-01",
   "version": "1.0.0",
   "description": "my first phaser tutorial",
-  "main": "server.js",
   "dependencies": {
     "phaser": "^3.16.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-core": "6",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^5.0.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "roberto",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": "https://github.com/bnoxb/phaser-tutorial-01.git"
 }
