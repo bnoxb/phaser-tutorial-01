@@ -37,6 +37,15 @@ export class CaveScene extends Phaser.Scene {
         this.ground.create(platCoords.endX, platCoords.endY, 'ground').setFrame(2);
         platCoords = this.createWalls('floorLeft', 6, 0, platCoords.endX, platCoords.endY, 1, 1);
 
+        // the next platform
+        platCoords = this.createWalls('ceilingRight', 10, 0, platCoords.endX - this.block, platCoords.endY - (this.block * 2), 17, 18);
+        platCoords = this.createWalls('leftWallUp', 1, 0, platCoords.endX, platCoords.endY, 2, 2);
+        platCoords = this.createWalls('floorLeft', 9, 0, platCoords.endX, platCoords.endY, 1, 1);
+
+        // the next one
+        platCoords = this.createWalls('ceilingRight', 12, 0, platCoords.endX - this.block, platCoords.endY - (this.block * 5), 17, 18);
+        platCoords = this.createWalls('leftWallUp', 1, 0, platCoords.endX, platCoords.endY, 2, 2);
+        platCoords = this.createWalls('floorLeft', 11, 0, platCoords.endX, platCoords.endY, 1, 1);
 
 
 
