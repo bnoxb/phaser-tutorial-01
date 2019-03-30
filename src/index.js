@@ -1,9 +1,12 @@
 import 'phaser';
-import { CaveScene } from './scenes/CaveScene'; 
+import { MarioScene } from './scenes/MarioScene'; 
 
 const config = {
-    width: 800,
-    height: 600,
+    width: 171,
+    height: 160,
+    zoom: 3,
+    pixelArt: true,
+    parent: "game-container",
     physics: {
         default: 'arcade',
         arcade: {
@@ -11,7 +14,7 @@ const config = {
             debug: false
         }
     },
-    scene: CaveScene
+    scene: MarioScene
 };
 
 
