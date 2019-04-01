@@ -1,20 +1,24 @@
 import 'phaser';
 import { MarioScene } from './scenes/MarioScene'; 
+import { PokemonScene } from './scenes/PokemonScene';
+import { IndustrialScene } from './scenes/IndustrialScene';
 
 const config = {
-    width: 171,
-    height: 160,
-    zoom: 3,
-    pixelArt: true,
+    type: Phaser.Auto,
+    width: 800,
+    height: 600,
+    zoom: 1,
+    pixelArt: false,
     parent: "game-container",
+    backgroundColor: '#1d212d',
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 300 },
-            debug: false
+            gravity: { y: 1000 },
+            
         }
     },
-    scene: MarioScene
+    scene: IndustrialScene
 };
 
 
